@@ -9,34 +9,38 @@
 }
 
 .salio {
-    background-color: yellowgreen
+    background-color: #882faf
 }
 
 .noSalio {
-    background-color: blue
+    background-color: #2faf4d
 }
 
 #arriba{
     height:50vh;
-    
     display:flex;
     flex-direction:row;
     justify-content:space-around;
-    padding:20px;
+    padding-top:20px;
+    flex-grow: 2;
 }
 
 #abajo{
     width: 75%;
 }
+body{
+    background-image: url("img/fondo.jpg");
+    background-size: 100% 100%;
+}
 #App{
     padding:2%;
     display:flex;
     flex-direction: column;
-    height: 100vh;
+    height: 89vh;
     justify-content:space-around;
 }
 #Webcam{
-    width:40%
+    width:40%;
 }
 #TablaBingo{
     width:50vh
@@ -48,13 +52,14 @@
 .item{
     font-size:100pt;
     transition: font-size 250ms linear,color 250ms linear;
-    color:yellowgreen;
-    margin:20px;
+    color:#882faf;
+    margin-left:20px;
+    margin-right:20px;
     font-family: Arial;
 }
 .item:not(:last-child){
     font-size:30pt;
-    color:blue
+    color:#2faf4d
 }
 .item:nth-last-child(2){
     font-size: 70pt;
@@ -69,10 +74,8 @@
 }
 .numeros-enter{
     font-size:0pt;
-    color:yellowgreen
 }
 .numeros-enter.numeros-enter-active{
     transition: font-size 250ms ease-out;
     font-size: 100pt;
-    color:yellowgreen
 }

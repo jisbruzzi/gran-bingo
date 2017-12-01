@@ -15,10 +15,12 @@ export class App extends React.Component {
     render(){
         
         return <div id="App">
+                <img src="img/titulo.png" /> 
                 <div style={{
                     display:"flex",
                     flexDirection:"row"
                 }} id="arriba">
+                    
                     <div id="Webcam">
                         <Webcam audio={false} style={{width:"100%",height:"100%"}}/>
                     </div>
