@@ -22,13 +22,13 @@
 .item{
     font-size:100pt;
     transition: font-size 250ms linear,color 250ms linear;
-    color:red;
+    color:yellowgreen;
     margin:20px;
     font-family: Arial;
 }
 .item:not(:last-child){
     font-size:30pt;
-    color:orange
+    color:blue
 }
 .item:nth-last-child(2){
     font-size: 70pt;
@@ -43,10 +43,10 @@
 }
 .numeros-enter{
     font-size:0pt;
-    color:red
+    color:yellowgreen
 }
 .numeros-enter.numeros-enter-active{
     transition: font-size 250ms ease-out;
     font-size: 100pt;
-    color:red
+    color:yellowgreen
 }

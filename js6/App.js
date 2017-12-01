@@ -3,6 +3,7 @@ import React from 'react';
 import {TablaBingo} from "./TablaBingo"
 import {InputSalen} from "./InputSalen"
 import {Ultimos} from "./Ultimos"
+import Webcam from 'react-webcam';
 
 export class App extends React.Component {
     constructor(props){
@@ -13,9 +14,17 @@ export class App extends React.Component {
     }
     render(){
         return <span>
-            <TablaBingo salieron={this.state.salieron}/>
-            <InputSalen onSalen={this.onSalen.bind(this)}/>
-            <Ultimos salieron={this.state.salieron} />
+            <div>
+                <div style={{
+                    display:"flex",
+                    flexDirection:"row"
+                }}>
+                    <Webcam audio={false}/>
+                    <TablaBingo salieron={this.state.salieron} style={{width:"45%",height: 0,paddingBottom:"100%"}}/>
+                </div>
+                <InputSalen onSalen={this.onSalen.bind(this)}/>
+                <Ultimos salieron={this.state.salieron} />
+            </div>
         </span>;
     }
     onSalen(salen){
