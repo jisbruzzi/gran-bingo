@@ -8,6 +8,13 @@
     transition: background-color 250ms linear
 }
 
+#banners{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    width:100%
+}
+
 .salio {
     background-color: #882faf
 }
@@ -26,7 +33,7 @@
 }
 
 #abajo{
-    width: 75%;
+    width: 87%;
 }
 body{
     background-image: url("img/fondo.jpg");
@@ -36,7 +43,7 @@ body{
     padding:2%;
     display:flex;
     flex-direction: column;
-    height: 89vh;
+    height: 91.3vh;
     justify-content:space-around;
 }
 #Webcam{
@@ -47,7 +54,7 @@ body{
 }
 
 #ultimos{
-    height:100pt;
+    height:115pt;
 }
 .item{
     font-size:100pt;

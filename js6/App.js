@@ -15,7 +15,10 @@ export class App extends React.Component {
     render(){
         
         return <div id="App">
-                <img src="img/titulo.png" /> 
+                <div id="banners">
+                    <div><img src="img/bingo.png" width="373" height="125"/></div>
+                    <div><img src="img/aca.png" width="163" height="100"/> </div>
+                </div>
                 <div style={{
                     display:"flex",
                     flexDirection:"row"
