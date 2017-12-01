@@ -13,19 +13,24 @@ export class App extends React.Component {
         }
     }
     render(){
-        return <span>
-            <div>
+        
+        return <div id="App">
                 <div style={{
                     display:"flex",
                     flexDirection:"row"
-                }}>
-                    <Webcam audio={false}/>
-                    <TablaBingo salieron={this.state.salieron} style={{width:"45%",height: 0,paddingBottom:"100%"}}/>
+                }} id="arriba">
+                    <div id="Webcam">
+                        <Webcam audio={false} style={{width:"100%",height:"100%"}}/>
+                    </div>
+                    <div id="TablaBingo">
+                        <TablaBingo salieron={this.state.salieron} />
+                    </div>
                 </div>
                 <InputSalen onSalen={this.onSalen.bind(this)}/>
-                <Ultimos salieron={this.state.salieron} />
-            </div>
-        </span>;
+                <div id="abajo">
+                    <Ultimos salieron={this.state.salieron}/>
+                </div>
+            </div>;
     }
     onSalen(salen){
         console.log(salen);

@@ -19,9 +19,11 @@ export function TablaBingo(props){
         armada.push(<tr key={nrosFila}>{fila}</tr>);
     }
     
-    return <table>
-        <tbody>
-            {armada}
-        </tbody>
-    </table>
+    return <div style={{width:"100%",height:"100%"}}>
+        <table width="100%" height="100%">
+            <tbody>
+                {armada}
+            </tbody>
+        </table>
+    </div>
 }

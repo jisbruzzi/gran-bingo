@@ -4,7 +4,7 @@
     color:white;
     text-align: center;
     font-family: Arial;
-    font-size: 25pt;
+    font-size: 150%;
     transition: background-color 250ms linear
 }
 
@@ -14,6 +14,32 @@
 
 .noSalio {
     background-color: blue
+}
+
+#arriba{
+    height:50vh;
+    
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    padding:20px;
+}
+
+#abajo{
+    width: 75%;
+}
+#App{
+    padding:2%;
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content:space-around;
+}
+#Webcam{
+    width:40%
+}
+#TablaBingo{
+    width:50vh
 }
 
 #ultimos{

@@ -9,13 +9,14 @@ export function Ultimos(props){
         return <NumeroDesplazante key={n} numero={n}/>
         
     })
-    return <ReactCSSTransitionGroup style={{
+    return <div id="ultimos">
+        <ReactCSSTransitionGroup style={{
         display:"flex",
         flexDirection:"row",
         justifyContent:"flex-end",
         alignItems:"center"
     }}
-    id="ultimos"
+    
     transitionName="numeros"
     transitionEnterTimeout={250}
     transitionLeaveTimeout={250}
@@ -26,4 +27,5 @@ export function Ultimos(props){
         
     
     </ReactCSSTransitionGroup>
+    </div>
 }
