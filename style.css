@@ -1,0 +1,16 @@
+
+.casillero  {
+    border: 1px solid darkgray;
+    color:white;
+    text-align: center;
+    font-family: Arial;
+    font-size: 25pt;
+}
+
+.salio {
+    background-color: yellowgreen
+}
+
+.noSalio {
+    background-color: blue
+}
