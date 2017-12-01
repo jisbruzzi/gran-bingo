@@ -5,6 +5,7 @@
     text-align: center;
     font-family: Arial;
     font-size: 25pt;
+    transition: background-color 250ms linear
 }
 
 .salio {
@@ -13,4 +14,39 @@
 
 .noSalio {
     background-color: blue
+}
+
+#ultimos{
+    height:100pt;
+}
+.item{
+    font-size:100pt;
+    transition: font-size 250ms linear,color 250ms linear;
+    color:red;
+    margin:20px;
+    font-family: Arial;
+}
+.item:not(:last-child){
+    font-size:30pt;
+    color:orange
+}
+.item:nth-last-child(2){
+    font-size: 70pt;
+}
+.item:nth-last-child(3){
+    font-size: 50pt;
+}
+
+.numeros-leave{
+    opacity: 0.01;
+    transition: opacity 250ms ease-in;
+}
+.numeros-enter{
+    font-size:0pt;
+    color:red
+}
+.numeros-enter.numeros-enter-active{
+    transition: font-size 250ms ease-out;
+    font-size: 100pt;
+    color:red
 }

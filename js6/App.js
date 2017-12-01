@@ -2,6 +2,7 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 import {TablaBingo} from "./TablaBingo"
 import {InputSalen} from "./InputSalen"
+import {Ultimos} from "./Ultimos"
 
 export class App extends React.Component {
     constructor(props){
@@ -14,6 +15,7 @@ export class App extends React.Component {
         return <span>
             <TablaBingo salieron={this.state.salieron}/>
             <InputSalen onSalen={this.onSalen.bind(this)}/>
+            <Ultimos salieron={this.state.salieron} />
         </span>;
     }
     onSalen(salen){
